@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>School Timer</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+ <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- Navbar -->
+ <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/Img/stopwatch.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      Study Timer
+    </a>
+  </div>
+</nav>
+
+<!-- Timer -->
+ <div class="container my-4">
+ <h2 id="status">Time to start 😃</h2>
+ <div id="display">00:00</div>
+ <button type="button" class="btn btn-outline-success" id="startStopBtn">Start</button>
+ <button type="button" class="btn btn-outline-warning" id="resetBtn">Restart</button>
+ <button type="button" class="btn btn-outline-secondary" id="addTimeBtn">Add time</button>
+ </div>
+
+ <!-- Joke -->
+<div class="d-grid gap-2 col-2 mx-auto">
+  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Click for surprise 😉</button>
+
+  <!-- Modal -->
+   <div class="modal fade btn btn-light" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        You a Bitch 🤣
+      </div>
+      <div class="modal-footer">
+        <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+ <script src="index.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
