@@ -67,14 +67,14 @@ function startStop() {
 function reset() {
     clearInterval(timer);
     running = false;
-    seconds = 0; // Set initial time here (e.g., 60 for 1 minute)
+    seconds = 5400; // Set initial time here (e.g., 60 for 1 minute)
     updateDisplay();
     startStopBtn.textContent = 'Start';
 }
 
 // Function to add time
 function addTime() {
-    const timeToAdd = 120; // Add 10 seconds
+    const timeToAdd = 20; // Add 10 seconds
     seconds += timeToAdd;
     updateDisplay();
 }
